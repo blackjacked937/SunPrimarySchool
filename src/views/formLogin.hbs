@@ -1,0 +1,96 @@
+{{>navegador}}
+
+
+  <!-- Contenido principal -->
+  <div class="container" id="inicio" style="padding-bottom: 10%;">
+    <h2>Inicio de Sesión</h2>
+    
+      <div class="col-md" >
+        <div class="card">
+          <h2 class="card-title">Registro</h2>
+          <form method="post" action="/signup">
+            <div class="form-group">
+              <label for="folio">Folio:</label>
+              <input type="text" class="form-control" id="folio" name="folio" required="required">
+            </div>
+            <div class="form-group">
+              <label for="contrasena_alumno">Contraseña (Fecha de nacimiento):</label>
+              <div class="form-row">
+                <div class="col">
+                  <select name="dia" id="dia" class="form-control" required="required">
+                    <option value="dia1">1</option>
+                    <option value="dia2">2</option>
+                    <option value="dia3">3</option>
+                    <option value="dia4">4</option>
+                    <option value="dia5">5</option>
+                    <option value="dia6">6</option>
+                    <option value="dia7">7</option>
+                    <option value="dia8">8</option>
+                    <option value="dia9">9</option>
+                    <option value="dia10">10</option>
+                    <option value="dia11">11</option>
+                    <option value="dia12">12</option>
+                    <option value="dia13">13</option>
+                    <option value="dia14">14</option>
+                    <option value="dia15">15</option>
+                    <option value="dia16">16</option>
+                    <option value="dia17">17</option>
+                    <option value="dia18">18</option>
+                    <option value="dia19">19</option>
+                    <option value="dia20">20</option>
+                    <option value="dia21">21</option>
+                    <option value="dia22">22</option>
+                    <option value="dia23">23</option>
+                    <option value="dia24">24</option>
+                    <option value="dia25">25</option>
+                    <option value="dia26">26</option>
+                    <option value="dia27">27</option>
+                    <option value="dia28">28</option>
+                    <option value="dia29">29</option>
+                    <option value="dia30">30</option>
+                    <option value="dia31">31</option>
+                  </select>
+                </div>
+                <div class="col">
+                  <select name="mes" id="mes" class="form-control" required="required">
+                    <option value="enero">Enero</option>
+                    <option value="febrero">Febrero</option>
+                    <option value="marzo">Marzo</option>
+                    <option value="abril">Abril</option>
+                    <option value="mayo">Mayo</option>
+                    <option value="junio">Junio</option>
+                    <option value="julio">Julio</option>
+                    <option value="agosto">Agosto</option>
+                    <option value="septiembre">Septiembre</option>
+                    <option value="octubre">Octubre</option>
+                    <option value="noviembre">Noviembre</option>
+                    <option value="diciembre">Diciembre</option>
+                  </select>
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" id="año" name="año" placeholder="Año" required="required">
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary" >Iniciar Sesión</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="container mt-4">
+        <button class="btn btn-warning" data-toggle="collapse" data-target="#contenidoOculto">¿Tienes Dudas? Consulta aqui</button>
+          <!-- Contenedor colapsable -->
+          <div id="contenidoOculto" class="collapse mt-3">
+              <p style="text-align: justify; font-size: 1em;">El proceso de acceso a nuestro sistema educativo es sencillo y seguro. Cada estudiante recibirá un número de folio único proporcionado por el docente responsable del curso. Además, para garantizar la confidencialidad, la contraseña de acceso será la fecha de nacimiento del alumno en formato "DDMMAAAA". Es importante destacar que esta información personal se utiliza exclusivamente con fines de autenticación y protección de la privacidad del estudiante. En caso de alguna duda o requerir aclaraciones adicionales, recomendamos comunicarse directamente con el docente encargado, quien estará dispuesto a brindar el apoyo necesario para facilitar el acceso y el proceso educativo en su totalidad. <strong>Valoramos la seguridad y transparencia en nuestra plataforma, y estamos comprometidos a brindar un ambiente de aprendizaje óptimo para todos nuestros alumnos.</strong></p>
+          </div>
+      </div>
+          
+      </div>
+      </div>
+
+      
+      
+      </div>
+    
+  </div>
+

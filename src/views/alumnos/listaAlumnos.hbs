@@ -1,0 +1,61 @@
+    
+    {{>prof}}
+    
+    <div class="container-fluid text-center">
+        <br>
+        <br>
+            <h4 class="card-header"><strong>
+                Lista de Alumnos
+            </strong></h4>
+            <div class="card-body">
+                <a class="btn btn-primary" href="/alumnos/guardar" role="button">
+                    <i class="fas fa-file" aria-hidden="true"></i>
+                Nuev@</a>
+        <!-- Tabla -->
+                <hr>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Folio</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Apellidos</th>
+                        <th scope="col">Dia</th>
+                        <th scope="col">Mes</th>
+                        <th scope="col">Año</th>
+                        <th scope="col">Grupo</th>
+                        <th scope="col">Grado</th>
+                        <th scope="col">Turno</th>
+                        <th scope="col">Operaciones</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+
+                      {{#each alumnos}}
+                        <tr>
+                            <th scope="row">{{folio}}</th>
+                            <td>{{nombre}}</td>
+                            <td>{{apellidos}}</td>
+                            <td>{{dia}}</td>
+                            <td>{{mes}}</td>
+                            <td>{{año}}</td>
+                            <td>{{grupo}}</td>
+                            <td>{{grado}}</td>
+                            <td>{{turno}}</td>
+                            <td>
+                                <a href="#" class="btn btn-success btn-sm"
+                                role="button" title="Editor">Editor<i class="fas fa-pencil-alt"
+                                aria-hidden="true"></i>
+                                </a>
+                                <a href="/alumnos/eliminar/{{folio}}" class="btn btn-danger btn-sm"
+                                role="button" title="Eliminar"> <i class="fas fa-trash"
+                                aria-hidden="true">Eliminar</i>
+                                </a>
+                            </td>
+                        </tr>
+                      {{/each}}
+
+                    </tbody>
+                  </table>
+            </div>
+          </div>
+   

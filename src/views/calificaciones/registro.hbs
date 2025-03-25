@@ -1,0 +1,160 @@
+{{>prof}}
+
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      padding-left: 10%;
+      margin: 5% 10%;
+    }
+  
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+  
+    th {
+      background-color: #f2f2f2;
+    }
+    section{
+        width: 50%;
+        margin: 0% 0% 10% 30%;
+    }
+    #alum{
+        margin: 5% 5% 5% 5%;
+    }
+    
+  </style>
+
+  
+
+  <section id="alum">
+    <div class="col-md-6">
+       <form method="post" action="">
+          <div class="form-group">
+              <label for="folio" >Seleccione al alumno: </label> <br>
+                 <select name="folio" class="form-control" id="folio" required="required">
+                    <option value="folio">Seleccione...</option>
+                      {{#each usuarios}}
+                        <option value="{{folio}}">{{nombre}}</option>
+                      {{/each}}
+                  </select>
+          </div>
+
+             
+  </section>
+  <hr>
+  <table>
+    <thead>
+      <tr>
+        <th>Materia</th>
+        <th>Bimestre 1</th>
+        <th>Bimestre 2</th>
+        <th>Bimestre 3</th>
+        <th>Bimestre 4</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Matemáticas</td>
+        <td>95</td>
+        <td>92</td>
+        <td>88</td>
+        <td>90</td>
+      </tr>
+      <tr>
+        <td>Lenguaje</td>
+        <td>88</td>
+        <td>90</td>
+        <td>92</td>
+        <td>95</td>
+      </tr>
+      <tr>
+        <td>Ciencias Naturales</td>
+        <td>92</td>
+        <td>85</td>
+        <td>90</td>
+        <td>88</td>
+      </tr>
+      <tr>
+        <td>Historia</td>
+        <td>80</td>
+        <td>85</td>
+        <td>88</td>
+        <td>90</td>
+      </tr>
+      <tr>
+        <td>Geografía</td>
+        <td>90</td>
+        <td>92</td>
+        <td>87</td>
+        <td>85</td>
+      </tr>
+      <tr>
+        <td>Artes Plásticas</td>
+        <td>95</td>
+        <td>92</td>
+        <td>90</td>
+        <td>88</td>
+      </tr>
+      <tr>
+        <td>Idioma Extranjero</td>
+        <td>92</td>
+        <td>90</td>
+        <td>95</td>
+        <td>92</td>
+      </tr>
+      <tr>
+        <td>Educación Física</td>
+        <td>85</td>
+        <td>88</td>
+        <td>92</td>
+        <td>90</td>
+      </tr>
+      <tr>
+        <td>Educación Cívica</td>
+        <td>90</td>
+        <td>88</td>
+        <td>85</td>
+        <td>92</td>
+      </tr>
+      <tr>
+        <td>Informática</td>
+        <td>88</td>
+        <td>90</td>
+        <td>92</td>
+        <td>85</td>
+      </tr>
+    </tbody>
+  </table>
+  <section>
+    
+    <div class="row">
+                      <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="observaciones">Observaciones del profesor:: </label>
+                                <textarea class="form-control" name="observaciones" id="observaciones" rows="2">
+                                </textarea>
+                            </div>
+                        </div>
+      </div>
+       <div class="row">
+                      <div class="col-md-6">
+                            <div class="form-group">
+                                <button type="submit" tittle="Guardar la calificacion" class="btn btn-primary">Guardar</button>
+                            </div>
+                        </div>
+      </div>
+
+      
+  </section>
+
+  
+  
+  
+
+
+       </form>
+                            
+ 

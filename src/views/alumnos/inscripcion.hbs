@@ -1,0 +1,149 @@
+
+{{>prof}}
+
+<hr>
+<div class="container" style="margin-top:20px"> 
+        <div class="card">
+            <h4 class="card-header" ><strong>Datos de Alumno de nuevo ingreso</strong></h4>
+            <div class="card-body">
+                <form method="post" action="/alumnos/guardar">
+                <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="folio">Folio: </label>
+                                <input type="text" class="form-control" id="folio" name="folio" 
+                                placeholder="Asigne un folio al alumno.." required="required">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="nombre">Nombre: </label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" 
+                                placeholder="Escriba el Nombre del alumno.." required="required">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="apellidos">Apellidos: </label>
+                                <input type="text" class="form-control" id="apellidos" name="apellidos" 
+                                placeholder="Escriba los apellidos" required="required">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="nombre">Escriba su fecha de nacimiento: </label>
+                                <div class="form-group">
+                                
+                                <div class="form-row">
+                                    <div class="col">
+                                    <select name="dia" id="dia" class="form-control" required="required">
+                                        <option value="dia1">1</option>
+                                        <option value="dia2">2</option>
+                                        <option value="dia3">3</option>
+                                        <option value="dia4">4</option>
+                                        <option value="dia5">5</option>
+                                        <option value="dia6">6</option>
+                                        <option value="dia7">7</option>
+                                        <option value="dia8">8</option>
+                                        <option value="dia9">9</option>
+                                        <option value="dia10">10</option>
+                                        <option value="dia11">11</option>
+                                        <option value="dia12">12</option>
+                                        <option value="dia13">13</option>
+                                        <option value="dia14">14</option>
+                                        <option value="dia15">15</option>
+                                        <option value="dia16">16</option>
+                                        <option value="dia17">17</option>
+                                        <option value="dia18">18</option>
+                                        <option value="dia19">19</option>
+                                        <option value="dia20">20</option>
+                                        <option value="dia21">21</option>
+                                        <option value="dia22">22</option>
+                                        <option value="dia23">23</option>
+                                        <option value="dia24">24</option>
+                                        <option value="dia25">25</option>
+                                        <option value="dia26">26</option>
+                                        <option value="dia27">27</option>
+                                        <option value="dia28">28</option>
+                                        <option value="dia29">29</option>
+                                        <option value="dia30">30</option>
+                                        <option value="dia31">31</option>
+                                    </select>
+                                    </div>
+                                    <div class="col">
+                                    <select name="mes" id="mes" class="form-control" required="required">
+                                        <option value="enero">Enero</option>
+                                        <option value="febrero">Febrero</option>
+                                        <option value="marzo">Marzo</option>
+                                        <option value="abril">Abril</option>
+                                        <option value="mayo">Mayo</option>
+                                        <option value="junio">Junio</option>
+                                        <option value="julio">Julio</option>
+                                        <option value="agosto">Agosto</option>
+                                        <option value="septiembre">Septiembre</option>
+                                        <option value="octubre">Octubre</option>
+                                        <option value="noviembre">Noviembre</option>
+                                        <option value="diciembre">Diciembre</option>
+                                    </select>
+                                    </div>
+                                    <div class="col">
+                                    <input type="text" class="form-control" id="año" name="año" placeholder="Año" required="required">
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <br>
+                    <br>
+                    <div class="row">
+                        
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="grupo">Grupo: </label>
+                                    <select name="grupo" id="grupo" class="form-control">
+                                        <option value="a">A</option>
+                                        <option value="b">B</option>
+                                        <option value="c">C</option>
+                                    </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="grado">Grado: </label>
+                                    <select name="grado" id="grado" class="form-control" required="required">
+                                        <option value="primero">1ro</option>
+                                        <option value="segundo">2do</option>
+                                        <option value="tercero">3ro</option>
+                                        <option value="cuarto">4to</option>
+                                        <option value="quinto">5to</option>
+                                        <option value="sexto">6to</option>
+                                    </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="turno">Turno: </label>
+                                    <select name="turno" id="turno" class="form-control">
+                                        <option value="mat">Matutino</option>
+                                        <option value="ves">Vespertino</option>
+                                    </select>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <button type="submit" tittle="Guardar la categoria" class="btn btn-primary">Guardar</button>
+                </form>
+            </div>
+          </div>
+    </div>
+</div>
+          
